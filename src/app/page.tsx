@@ -272,8 +272,8 @@ export default function Home() {
             y: windowPosition.y,
           }}
           transition={{
-            opacity: { duration: 0.2 },
-            scale: { duration: 0.2 },
+            opacity: { duration: 0.3 },
+            scale: { duration: 0.3 },
             x: { duration: 0 },
             y: { duration: 0 },
           }}
