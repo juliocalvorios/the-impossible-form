@@ -133,3 +133,4 @@ export function EasterEggToast({ egg }: EasterEggToastProps) {
 }
 
 export default EasterEggToast
+// FIXME; button sometimes gets stuck in corner
