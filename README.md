@@ -41,3 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - fleeing submit button
 - self-unchecking checkboxes
 - windows 95 ui
+
+
+## tech
+next.js, typescript, react hook form, zod, framer motion
