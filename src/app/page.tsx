@@ -640,3 +640,4 @@ export default function Home() {
     </div>
   )
 }
+// NOTE; might add konami code later
