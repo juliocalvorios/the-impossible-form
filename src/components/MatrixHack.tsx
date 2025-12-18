@@ -31,6 +31,7 @@ const MATRIX_CHARS = 'アイウエオカキクケコサシスセソタチツテ�
 function TypedText({ text, onComplete, speed = 50 }: { text: string; onComplete?: () => void; speed?: number }) {
   const [displayed, setDisplayed] = useState('')
   const [showCursor, setShowCursor] = useState(true)
+  const [hasCompleted, setHasCompleted] = useState(false)
 
   useEffect(() => {
     let index = 0
@@ -41,12 +42,15 @@ function TypedText({ text, onComplete, speed = 50 }: { text: string; onComplete?
       } else {
         clearInterval(interval)
         setShowCursor(false)
-        onComplete?.()
+        if (!hasCompleted) {
+          setHasCompleted(true)
+          onComplete?.()
+        }
       }
     }, speed)
 
     return () => clearInterval(interval)
-  }, [text, speed, onComplete])
+  }, [text, speed])
 
   return (
     <span className="text-[#00FF00]">

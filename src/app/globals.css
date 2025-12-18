@@ -181,3 +181,12 @@ body {
 .screen-shake {
   animation: screen-shake 0.5s ease-in-out;
 }
+
+/* Hide Next.js development indicator */
+#__next-build-watcher {
+  display: none !important;
+}
+
+nextjs-portal {
+  display: none !important;
+}

@@ -358,7 +358,7 @@ export default function Home() {
             </div>
 
             {/* Content Area */}
-            <div className="bg-[#c0c0c0] p-[8px] relative overflow-hidden">
+            <div className="bg-[#c0c0c0] p-[8px] relative overflow-hidden max-h-[calc(100vh-200px)] overflow-y-auto">
               {/* Matrix Hack Overlay - Inside the window */}
               <AnimatePresence>
                 {isHacking && (
