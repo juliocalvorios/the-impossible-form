@@ -17,10 +17,6 @@ export const metadata: Metadata = {
   description: "A form that doesn't want to be filled out. Experience fleeing buttons, self-unchecking checkboxes, and changing password requirements. A satirical demonstration of dark UX patterns using React Hook Form, Zod, and Framer Motion.",
   keywords: ["dark patterns", "UX", "React", "form", "satire", "web development", "Zod", "React Hook Form", "Framer Motion"],
   authors: [{ name: "Julio Calvo", url: "https://juliocalvo.dev" }],
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/icon.svg',
-  },
   openGraph: {
     title: "The Impossible Form",
     description: "A form that doesn't want to be filled out. Can you conquer it?",
